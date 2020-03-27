@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit 20</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Keyboard</h1>
+
+        <section>
+            <p><b>Task 11.</b></p>
+            <p> Проект. Дан input .i-11. Используя знания html и css нарисуйте клавиатуру (можно схематически).
+                Изображение должно содержать числа, символьные клавиши, пробел, enter, caps lock, shift, tab, alt. При
+                вводе текста в input в момент нажатия клавиши - затемняйте ее, в момент отпускания - возвращайте к
+                первоначальному состоянию. Аналогично при нажатии enter, space, alt, shift, ctrl. Затемнение реализуйте
+                через добавление класса CSS. Для удобства рекомендую каждой клавише добавить атрибут data с символом.
+                Если нажата клавиша caps lock - то присвоить ей затемнение, которое работает до последующего отжатия
+                клавиши.</p>
+            <div>
+
+                <input type="text" class="i-11">
+                <div class="out-11">
+
+                </div>
+                <div class="keyboard">
+                    <div class="keyboard__row">
+                        <div class="key-el" data-key-el="§">§</div>
+                        <div class="key-el" data-key-el="1">1</div>
+                        <div class="key-el" data-key-el="2">2</div>
+                        <div class="key-el" data-key-el="3">3</div>
+                        <div class="key-el" data-key-el="4">4</div>
+                        <div class="key-el" data-key-el="5">5</div>
+                        <div class="key-el" data-key-el="6">6</div>
+                        <div class="key-el" data-key-el="7">7</div>
+                        <div class="key-el" data-key-el="8">8</div>
+                        <div class="key-el" data-key-el="9">9</div>
+                        <div class="key-el" data-key-el="0">0</div>
+                        <div class="key-el" data-key-el="-">-</div>
+                        <div class="key-el" data-key-el="=">=</div>
+                        <div class="key-el" data-key-el="Backspace">BackSpace</div>
+                    </div>
+                    <div class="keyboard__row">
+                        <div class="key-el" data-key-el="_tab">Tab</div>
+                        <div class="key-el" data-key-el="q">q</div>
+                        <div class="key-el" data-key-el="w">w</div>
+                        <div class="key-el" data-key-el="e">e</div>
+                        <div class="key-el" data-key-el="r">r</div>
+                        <div class="key-el" data-key-el="t">t</div>
+                        <div class="key-el" data-key-el="y">y</div>
+                        <div class="key-el" data-key-el="u">u</div>
+                        <div class="key-el" data-key-el="i">i</div>
+                        <div class="key-el" data-key-el="o">o</div>
+                        <div class="key-el" data-key-el="p">p</div>
+                        <div class="key-el" data-key-el="[">[</div>
+                        <div class="key-el" data-key-el="]">]</div>
+                        <div class="key-el" data-key-el="Enter">Enter</div>
+                    </div>
+                    <div class="keyboard__row">
+                        <div class="key-el" data-key-el="CapsLock">CapsLock</div>
+                        <div class="key-el" data-key-el="a">a</div>
+                        <div class="key-el" data-key-el="s">s</div>
+                        <div class="key-el" data-key-el="d">d</div>
+                        <div class="key-el" data-key-el="f">f</div>
+                        <div class="key-el" data-key-el="g">g</div>
+                        <div class="key-el" data-key-el="h">h</div>
+                        <div class="key-el" data-key-el="j">j</div>
+                        <div class="key-el" data-key-el="k">k</div>
+                        <div class="key-el" data-key-el="l">l</div>
+                        <div class="key-el" data-key-el=";">;</div>
+                        <div class="key-el" data-key-el="'">'</div>
+                        <div class="key-el" data-key-el="\">\</div>
+                    </div>
+                    <div class="keyboard__row">
+                        <div class="key-el" data-key-el="ShiftLeft">Shift</div>
+                        <div class="key-el" data-key-el="`">`</div>
+                        <div class="key-el" data-key-el="z">z</div>
+                        <div class="key-el" data-key-el="x">x</div>
+                        <div class="key-el" data-key-el="c">c</div>
+                        <div class="key-el" data-key-el="v">v</div>
+                        <div class="key-el" data-key-el="b">b</div>
+                        <div class="key-el" data-key-el="n">n</div>
+                        <div class="key-el" data-key-el="m">m</div>
+                        <div class="key-el" data-key-el=",">,</div>
+                        <div class="key-el" data-key-el=".">.</div>
+                        <div class="key-el" data-key-el="/">/</div>
+                        <div class="key-el" data-key-el="ShiftRight">Shift</div>
+                    </div>
+                    <div class="keyboard__row">
+                        <div class="funckey">
+                            <div class="key-el" data-key-el="fn">fn</div>
+                            <div class="key-el" data-key-el="Control">Ctrl</div>
+                            <div class="key-el" data-key-el="AltLeft">Alt</div>
+                            <div class="key-el" data-key-el="MetaLeft">Cmd</div>
+                            <div class="key-el space" data-key-el=" ">Space</div>
+                            <div class="key-el" data-key-el="MetaRight">Cmd</div>
+                            <div class="key-el" data-key-el="AltRight">Alt</div>
+                        </div>
+
+
+                        <div class="arrow">
+                            <div class="arrow__col">
+                                <div class="key-el arrowy" data-key-el="ArrowLeft">Влево</div>
+                            </div>
+                            <div class="arrow__col">
+                                <div class="key-el arrowy arrowy__up" data-key-el="ArrowUp">Вверх</div>
+                                <div class="key-el arrowy arrowy__down" data-key-el="ArrowDown">Вниз</div>
+                            </div>
+                            <div class="arrow__col">
+                                <div class="key-el arrowy" data-key-el="ArrowRight">Вправо</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
